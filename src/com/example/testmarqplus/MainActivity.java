@@ -24,7 +24,7 @@ import android.widget.Button;
 
 				if(isAppInstalled("com.marq.plus")==true){
 					Intent intent = new Intent(); 					
-					intent = new Intent(Intent.ACTION_VIEW, Uri.parse("marqPlus://com.marq.plus/"));
+					intent = new Intent(Intent.ACTION_VIEW, Uri.parse("marqplus://com.marq.plus/"));
 					MainActivity.this.startActivity(intent);	
 				}else{
 					Intent intent = new Intent(); 					
