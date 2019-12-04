@@ -24,7 +24,9 @@ import android.widget.Button;
 
 				if(isAppInstalled("com.marq.plus")==true){
 					Intent intent = new Intent(); 					
-					intent = new Intent(Intent.ACTION_VIEW, Uri.parse("marqplus://com.marq.plus/"));
+					//intent = new Intent(Intent.ACTION_VIEW, Uri.parse("marqplus://com.marq.plus/"));
+					ComponentName comp = new ComponentName("com.marq.plus", "com.marq.plus.unity.MarqUnityPlayerActivity");
+					intent.setComponent(comp);
 					MainActivity.this.startActivity(intent);	
 				}else{
 					Intent intent = new Intent(); 					
